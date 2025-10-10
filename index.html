@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
 <script src="https://cdn.signalfx.com/o11y-gdi-rum/v1.0.1/splunk-otel-web.js" crossorigin="anonymous"></script>
+<script src="https://cdn.signalfx.com/o11y-gdi-rum/v1.0.1/splunk-otel-web-session-recorder.js" crossOrigin="anonymous"></script>
 <script>
    SplunkRum.init({
       realm: 'eu1',
@@ -20,6 +21,13 @@
       version: '1.0',
       deploymentEnvironment: 'Test'
    });
+</script>
+<script>
+    SplunkSessionRecorder.init({
+        realm: 'eu1',
+        rumAccessToken: 'LDNFa_VKK7lvZi_kQODsKQ',
+        recorder: 'splunk'
+    });
 </script>
 
 <!-- Google Tag Manager -->
@@ -274,4 +282,5 @@
 
 	</body>
 </html>
+
 
